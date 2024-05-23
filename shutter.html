@@ -1,0 +1,39 @@
+<html>
+        <head>
+            <meta charset="UTF-8">
+            <link rel="shortcut icon" type="x-icon" href="shutter.png">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="style.css">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+            <title> ShutterSphere.com </title>
+        </head>
+        
+        <body>  
+            <nav>
+                <div class="container">
+                    <img src="IT.jpg" class="logo-image" alt="Logo">
+                    <div class="search">
+                        <span class="search-icon material-symbols-outlined">search</span>
+                        <input class="search-input" type="search" placeholder="Search Name">
+                    </div>
+                    <ul class="Menu">
+                        <li><a href="" onclick="location.reload();">Home</a></li>
+                        <li><a href="https://www.example.com/course" target="_blank">Course</a></li>
+                        <li><a href="https://www.example.com/course" target="_blank">About Us</a></li>                        
+                        <li><a href="https://www.example.com" onclick="showLogoutConfirmation();">Log Out</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div id="logout-confirmation-modal" style="display: none;">
+                <div class="modal-content">
+                    <h2>Log Out Confirmation</h2>
+                    <p>Are you sure you want to log out?</p>
+                    <button onclick="logout()">Log Out</button>
+                    <button onclick="hideLogoutConfirmation()">Cancel</button>
+                </div>
+            </div>           
+
+        </body>
+</html>
